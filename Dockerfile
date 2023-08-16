@@ -8,4 +8,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD [ "node", "server.js" ]
+CMD [ "sh", "-c", "node server.js > logs.txt 2>&1"]
